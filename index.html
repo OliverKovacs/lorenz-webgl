@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>New tab</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="__invalid__"/>
+        <script src="main.js" type="module"></script>
+        <script src="/components/ui-slider.js" type="module"></script>
+        <script src="/components/ui-overlay.js" type="module"></script>
+    </head>
+    <body>
+        <div id="container">
+            <canvas id="canvas">Canvas not supported.</canvas>
+            <div id="overlay">
+                <ui-overlay on="false">
+                    <div class="column left clear">
+                        <h1>Settings</h1>
+                        <ui-slider id="speed" default="50">Speed:</ui-slider>
+                        <ui-slider id="amount" min="1" max="500" default="100"">Amount:</ui-slider>
+                        <ui-slider id="length" min="1" max="50" default="50">Length:</ui-slider>
+                        <ui-slider id="size" default="70">Size:</ui-slider>
+                        <ui-slider id="rotate" default="5">Rotate:</ui-slider>
+                        <br>
+                        Use <b>1</b>, <b>2</b>, <b>3</b> to rotate.
+                        <br>
+                        <br>
+                        <b>WebGL</b><div id="webgl"></div>
+                        <br>
+                        <b>GPU</b>
+                        <br>
+                        Vendor:<div id="vendor"></div>
+                        Renderer:<div id="renderer"></div>
+                    </div>
+                    <div class="column right">
+                        <h1>Shader</h1>
+                        <ui-slider id="time-speed" default="10">Time:</ui-slider>
+                        <ui-slider id="offset-speed"default="20"">Offset:</ui-slider>
+                        <ui-slider id="shader-frequency"default="10"">Frequency:</ui-slider>
+                        <ui-slider id="shader-phase"default="0"">Phase:</ui-slider>
+                        <br>
+                        <b>Version</b><div id="shader"></div>
+                    </div>
+                </ui-overlay>
+            </div>
+        </div>
+    </body>
+</html>

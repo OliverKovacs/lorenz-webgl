@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "author": "Oliver Kovacs",
+    "name": "Chrome Lorenz Attractor",
+    "description": "Lorenz attractor new tab. Press 'Tab s' to open the settings and 's' to toggle them.",
+    "version": "2.1",
+    "short_name" : "Lorenz attractor new tab",
+    "chrome_url_overrides": {
+        "newtab" : "index.html"
+    },
+    "icons" : {
+        "128" : "icon128.png"
+    }
+}
