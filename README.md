@@ -2,6 +2,8 @@
 
 [Lorenz attractor](https://en.wikipedia.org/wiki/Lorenz_system) new tab extension for Google Chrome implemented in WebGL.  
 
+**[Live Demo](https://oliverkovacs.github.io/demo/lorenz/index.html)**
+
 ## Installation
 Clone the repo  
 ```
